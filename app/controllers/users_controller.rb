@@ -19,7 +19,8 @@ class UsersController < ApplicationController
     user["first_name"] = params["first_name"]
     user["last_name"] = params["last_name"]
     user["email"] = params["email"]
-    user["password"] = params["password"]
+    # the password goes through the model, which hashes it (see app/models/user.rb)
+    user.password = params["password"]
     # save the User row
     user.save
     # log the new user in, then redirect
