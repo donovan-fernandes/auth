@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "4.0.5"
 
 gem "rails", "~> 8.1.2"
-gem "sqlite3", "~> 2.1"
+gem "sqlite3", "~> 2.10"
 gem "puma", ">= 5.0"
 gem "bcrypt", "~> 3.1.7"
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
